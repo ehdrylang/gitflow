@@ -1,0 +1,20 @@
+[2019-09-07 23:08:59.174][restartedMain] INFO  com.example.demo.GitflowApplication - Starting GitflowApplication on DESKTOP-TVKLTT8 with PID 3636 (C:\Users\ehdry\Documents\gitflow\gitflow\target\classes started by jdk in C:\Users\ehdry\Documents\gitflow\gitflow)
+[2019-09-07 23:08:59.178][restartedMain] INFO  com.example.demo.GitflowApplication - No active profile set, falling back to default profiles: default
+[2019-09-07 23:08:59.289][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2019-09-07 23:08:59.291][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2019-09-07 23:09:01.369][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2019-09-07 23:09:01.395][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2019-09-07 23:09:01.421][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2019-09-07 23:09:01.421][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[2019-09-07 23:09:01.611][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2019-09-07 23:09:01.611][restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2314 ms
+[2019-09-07 23:09:01.677][restartedMain] INFO  c.e.d.controller.SignupController - class com.example.demo.controller.SignupController
+[2019-09-07 23:09:01.678][restartedMain] INFO  c.e.demo.ees.convert.ConvertService - class com.example.demo.ees.convert.ConvertService
+[2019-09-07 23:09:01.681][restartedMain] INFO  c.e.demo.ees.sender.SenderService - class com.example.demo.ees.sender.SenderService
+[2019-09-07 23:09:01.956][restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[2019-09-07 23:09:02.198][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2019-09-07 23:09:02.226][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2019-09-07 23:09:02.259][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2019-09-07 23:09:02.265][restartedMain] INFO  com.example.demo.GitflowApplication - Started GitflowApplication in 4.305 seconds (JVM running for 5.638)
+[2019-09-07 23:09:05.366][RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2019-09-07 23:09:05.373][RMI TCP Connection(3)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

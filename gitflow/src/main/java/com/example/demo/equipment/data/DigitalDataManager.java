@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.equipment.data;
 
 import javax.annotation.PostConstruct;
 
@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SignupController {
-	private static Logger logger = LoggerFactory.getLogger(SignupController.class);
+public class DigitalDataManager {
+	private static Logger logger = LoggerFactory.getLogger(DigitalDataManager.class);
 	@PostConstruct
 	private void init() {
 		logger.info(this.getClass().toString());

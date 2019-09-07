@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true" scan="true" scanPeriod="10 seconds">
+  	<!-- :%-3relative -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</Pattern>
+        </layout>
+    </appender>
+    
+    <appender name="ROLLING_ROOT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./Log/root.log</file>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./Log/root.%d{yyyy-MM-dd_HH}.%i.log.gz</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>50MB</maxFileSize>
+                <!-- kb, mb, gb -->
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    
+    <appender name="ROLLING_EES" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./Log/ees.log</file>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./Log/ees.%d{yyyy-MM-dd_HH}.%i.log.gz</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>50MB</maxFileSize>
+                <!-- kb, mb, gb -->
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    
+    <appender name="ROLLING_EQUIPMENT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./Log/equipment.log</file>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./Log/equipment.%d{yyyy-MM-dd_HH}.%i.log.gz</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>50MB</maxFileSize>
+                <!-- kb, mb, gb -->
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    
+    <appender name="ROLLING_EQUIPMENT_DATA" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./Log/equipmentData.log</file>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./Log/equipmentData.%d{yyyy-MM-dd_HH}.%i.log.gz</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>50MB</maxFileSize>
+                <!-- kb, mb, gb -->
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <appender name="ROLLING_EQUIPMENT_DATA_ANALOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./Log/analog.log</file>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>./Log/analog.%d{yyyy-MM-dd_HH}.%i.log.gz</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 100MB -->
+                <maxFileSize>50MB</maxFileSize>
+                <!-- kb, mb, gb -->
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <appender name="ROLLING_EQUIPMENT_EVENT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    	<file>./Log/event.log</file>
+    	<encoder>
+     	   <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][%thread] %-5level %logger{35} - %msg%n</pattern>
+    	</encoder>
+    	<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	        <fileNamePattern>./Log/event.%d{yyyy-MM-dd_HH}.%i.log.gz</fileNamePattern>
+	        <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+	            <!-- or whenever the file size reaches 100MB -->
+	            <maxFileSize>50MB</maxFileSize>
+	            <!-- kb, mb, gb -->
+	        </timeBasedFileNamingAndTriggeringPolicy>
+	        <maxHistory>30</maxHistory>
+    	</rollingPolicy>
+    </appender>  
+    <!-- #################################################################################################################################### -->  
+    <!-- ###############################################################logger############################################################### -->  
+    <!-- #################################################################################################################################### -->  
+    <logger name="com.example.demo.ees" level="INFO" >
+        <appender-ref ref="ROLLING_EES" />
+    </logger>
+    <!-- equipment super --> 
+    <logger name="com.example.demo.equipment" level="INFO"  >        
+ 		<appender-ref ref="ROLLING_EQUIPMENT" />
+	</logger>
+	<!-- from equipment event -->
+	<logger name="com.example.demo.equipment.event" level="INFO" >
+        <appender-ref ref="ROLLING_EQUIPMENT_EVENT" />
+    </logger>
+	<!-- from equipment (parameter) -->
+	<logger name="com.example.demo.equipment.data" level="INFO" additivity="false">
+        <appender-ref ref="ROLLING_EQUIPMENT_DATA" />
+    </logger>
+    <logger name="com.example.demo.equipment.data.analog" level="INFO" >
+        <appender-ref ref="ROLLING_EQUIPMENT_DATA_ANALOG" />
+    </logger>
+    <!-- additivity="false" -->
+    <!-- STDOUT에 다 찍는가 -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="ROLLING_ROOT" />
+    </root>
+</configuration>

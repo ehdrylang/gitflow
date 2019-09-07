@@ -1,0 +1,2 @@
+[2019-09-07 23:09:01.678][restartedMain] INFO  c.e.demo.ees.convert.ConvertService - class com.example.demo.ees.convert.ConvertService
+[2019-09-07 23:09:01.681][restartedMain] INFO  c.e.demo.ees.sender.SenderService - class com.example.demo.ees.sender.SenderService
